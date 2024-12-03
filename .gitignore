@@ -1,7 +1,19 @@
 
-Population Cluster with Electrification Scenarios_Somalia.cpg
-Population Cluster with Electrification Scenarios_Somalia.dbf
-Population Cluster with Electrification Scenarios_Somalia.qmd
-Population Cluster with Electrification Scenarios_Somalia.shp
-Population Cluster with Electrification Scenarios_Somalia.prj
-Population Cluster with Electrification Scenarios_Somalia.shx
+
+somalia_energy_with_technology.csv
+somalia_aggregated_energy.csv
+shiny/static/images/technology_plot.png
+shiny/static/images/line_plot_chart.png
+shiny/static/images/energy_plot.png
+shiny/static/images/bar_plot_chart.png
+shiny/static/images/2000-2021.png
+shiny/static/images/2000-2013.png
+shiny/static/images/2000-2005.png
+shiny/dashboard/styles.css
+shiny/dashboard/shared.py
+shiny/dashboard/requirements.txt
+shiny/dashboard/penguins.csv
+shiny/dashboard/app.py
+shiny/dashboard/__pycache__/app.cpython-312.pyc
+chart.html
+bar.html
