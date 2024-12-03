@@ -9,11 +9,5 @@ shiny/static/images/bar_plot_chart.png
 shiny/static/images/2000-2021.png
 shiny/static/images/2000-2013.png
 shiny/static/images/2000-2005.png
-shiny/dashboard/styles.css
-shiny/dashboard/shared.py
-shiny/dashboard/requirements.txt
-shiny/dashboard/penguins.csv
-shiny/dashboard/app.py
-shiny/dashboard/__pycache__/app.cpython-312.pyc
 chart.html
 bar.html
