@@ -1,5 +1,5 @@
 ---
-title: "30538 Final Project"
+title: "Somalia’s Energy Infrastructure: Challenges and Opportunities"
 authors: "Mohamed Mohamed"
 format: 
   pdf:
@@ -20,6 +20,7 @@ include-before-body:
 1. Data wrangling 
 
 ```{python}
+#| echo: false
 import pandas as pd
 
 # Loading the datasets
@@ -37,6 +38,7 @@ electricity_generation_somalia = electricity_generation.query("Country == 'Somal
 ```
 
 ```{python}
+#| echo: false
 primary_energy_somalia = primary_energy_somalia[['Year', 'Primary energy consumption (TWh)']]
 electricity_generation_somalia = electricity_generation_somalia[['Year', 'Electricity Generation (GWh)', 'Technology']]
 
@@ -63,6 +65,7 @@ merged_data.to_csv("somalia_energy_with_technology.csv", index=False)
 2. Plotting
 
 ```{python}
+#| echo: false
 import altair as alt
 import pandas as pd
 
@@ -92,6 +95,7 @@ aggregated_data.to_csv("somalia_aggregated_energy.csv", index=False)
 
 
 ```{python}
+#| echo: false
 # Reshaping data
 melted_data = pd.melt(aggregated_data, id_vars=['Year'], 
     value_vars=['Primary energy consumption (TWh)', 'Actual Electricity Generation (TWh)'],
@@ -113,6 +117,7 @@ line_plot.save('chart.html')
 ```
 
 ```{python}
+#| echo: false
 # Loadint merged dataset
 bar_data = pd.read_csv("somalia_energy_with_technology.csv")
 
@@ -134,6 +139,7 @@ aggregated_data = bar_data.groupby(['Year', 'Technology'], as_index=False).agg({
 ```
 
 ```{python}
+#| echo: false
 # Reshaping data
 melted_data = pd.melt(aggregated_data, id_vars=['Year', 'Technology'], 
     value_vars=['Electricity Generation (TWh)'],
